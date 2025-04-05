@@ -83,7 +83,7 @@ const Navbar = () => {
         {mobileDrawerOpen && (
           <div
             ref={drawerRef}
-            className="fixed right-0 z-10 bg-black/90  border border-neutral-700/80  w p-12 flex flex-col justify-center items-center lg:hidden text-white text-lg"
+            className="fixed right-0 z-10 bg-black/90  border border-neutral-700/80  w p-12 flex flex-col justify-center items-center lg:hidden text-white text-lg sm:text-md"
           >
             <ul>
               {navItems.map((item, index) => (

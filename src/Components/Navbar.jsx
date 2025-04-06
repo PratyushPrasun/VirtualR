@@ -90,6 +90,7 @@ const Navbar = () => {
                 <li key={index} className='py-2'>
                   <NavLink
                       to={item.href}
+                    onClick={closeNavbar}
                       className={({ isActive }) =>
                         `block py-2 pr-4 pl-3 duration-300 ease-in-out 
     ${isActive ? "text-orange-700" : "text-white"}  

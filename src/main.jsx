@@ -11,20 +11,20 @@ import Testimonials from './Components/Testimonials'
 import Pricing from './Components/Pricing'
 
 
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path='/' element={<App/>}>
-      <Route path='' element={<HeroSection/>}/>
-      <Route path='feature' element={<Feature/>}/>
-      <Route path='workflow' element={<Workflow/>}/>
-      <Route path='testimonials' element={<Testimonials/>}/>
-      <Route path='pricing' element={<Pricing/>}/>
-    </Route>
-  )
-)
+// const router = createBrowserRouter(
+//   createRoutesFromElements(
+//     <Route path='/' element={<App/>}>
+//       <Route path='' element={<HeroSection/>}/>
+//       <Route path='feature' element={<Feature/>}/>
+//       <Route path='workflow' element={<Workflow/>}/>
+//       <Route path='testimonials' element={<Testimonials/>}/>
+//       <Route path='pricing' element={<Pricing/>}/>
+//     </Route>
+//   )
+// )
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router}/>
+
   </StrictMode>,
 )

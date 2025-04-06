@@ -88,13 +88,18 @@ const Navbar = () => {
             <ul>
               {navItems.map((item, index) => (
                 <li key={index} className='py-2'>
-                  <a
-                    href={item.href}
-                    onClick={closeNavbar}
-                    className="inline-block transition-all duration-300 ease-in-out hover:text-orange-500 hover:scale-120"
-                  >
-                    {item.label}
-                  </a>
+                  <NavLink
+                      to={item.href}
+                      className={({ isActive }) =>
+                        `block py-2 pr-4 pl-3 duration-300 ease-in-out 
+    ${isActive ? "text-orange-700" : "text-white"}  
+    lg:hover:bg-transparent lg:border-0 lg:p-0 
+    hover:text-orange-700 
+    transition-all transform hover:scale-120 inline-block`
+                      }
+                    >
+                      {item.label}
+                      </NavLink>
                 </li>
               ))}
             </ul>
